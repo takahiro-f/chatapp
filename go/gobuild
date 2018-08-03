@@ -1,0 +1,11 @@
+printf "build for mac..."
+GOOS=darwin GOARCH=amd64 go build -o ./output/chatapp_for_mac ./src/*.go
+echo "done."
+
+printf "build for linux..."
+GOOS=linux GOARCH=amd64 go build -o ./output/chatapp_for_linux ./src/*.go
+echo "done."
+
+printf "build for windows..."
+GOOS=windows GOARCH=amd64 go build -o ./output/chatapp_for_windows ./src/*.go
+echo "done."
